@@ -125,7 +125,7 @@ export default function NotitasCompartidas() {
     <section className="seccion notas-compartidas" aria-labelledby="t-notas-compartidas">
       <h2 id="t-notas-compartidas">Notas compartidas</h2>
       <p className="notas-compartidas__intro">
-        Cualquiera puede leer y publicar notas. No incluyas datos personales.
+        Para cuando no encuentres cómo escribirme, princesa, acá está este espacio de notas públicas para que me dejes una notita. Recuerda que cualquiera puede leerla, así que no escribas nada personal.
       </p>
 
       {!supabase ? (
