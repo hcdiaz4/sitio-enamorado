@@ -76,6 +76,11 @@ h1, h2, h3 { font-family: var(--f-display), Georgia, serif; font-weight: 400; li
 .notas-compartidas__acciones { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--suave); font-size: .9rem; }
 .notas-compartidas__boton { padding: .65rem 1rem; border: 1px solid var(--rosa); border-radius: .75rem; background: var(--rosa); color: var(--noche); font: inherit; font-weight: 600; cursor: pointer; }
 .notas-compartidas__boton:disabled { cursor: wait; opacity: .7; }
+.notas-compartidas__boton--secundario { background: transparent; color: var(--texto); }
+.notas-compartidas__sesion { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: 1rem; }
+.notas-compartidas__sesion p { margin: 0; color: var(--suave); overflow-wrap: anywhere; }
+.notas-compartidas__acceso { display: flex; flex-wrap: wrap; gap: .75rem; }
+.notas-compartidas__acceso input { min-width: 0; flex: 1; }
 .notas-compartidas__lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .notas-compartidas__nota { min-width: 0; padding: 1.25rem; border: 1px solid #6b3a7a; border-radius: .5rem 1.5rem .5rem 1.5rem; background: var(--noche-2); }
 .notas-compartidas__nota p { margin: 0 0 1rem; overflow-wrap: anywhere; white-space: pre-wrap; }

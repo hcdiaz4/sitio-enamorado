@@ -3,6 +3,16 @@ import { createClient } from "@supabase/supabase-js";
 export type Database = {
   public: {
     Tables: {
+      notas_autores_permitidos: {
+        Row: {
+          user_id: string;
+        };
+        Insert: {
+          user_id: string;
+        };
+        Update: never;
+        Relationships: [];
+      };
       notas_compartidas: {
         Row: {
           id: string;
