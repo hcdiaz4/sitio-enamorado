@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Gloock, Figtree } from "next/font/google";
+import Estrellas from "@/components/Estrellas";
 import "./globals.css";
 
 const display = Gloock({ weight: "400", subsets: ["latin"], variable: "--f-display" });
@@ -13,7 +14,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${display.variable} ${cuerpo.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Estrellas />
+        {children}
+      </body>
     </html>
   );
 }
