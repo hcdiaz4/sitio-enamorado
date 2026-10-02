@@ -69,6 +69,24 @@ h1, h2, h3 { font-family: var(--f-display), Georgia, serif; font-weight: 400; li
 .carta__pista { color: var(--suave); font-size: .9rem; }
 .carta__texto { font-size: 1.02rem; }
 
+.galeria__intro { margin: -1.5rem 0 1.5rem; color: var(--suave); }
+.galeria__acceso, .galeria__subida { padding: 1.25rem; border: 1px solid #6b3a7a; border-radius: .5rem 1.5rem .5rem 1.5rem; background: var(--noche-2); }
+.galeria__acceso label, .galeria__subida label { display: block; margin-bottom: .75rem; }
+.galeria__acciones, .galeria__barra { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.galeria__acciones input[type="email"], .galeria__acciones input[type="file"] { min-width: 0; flex: 1; color: var(--texto); font: inherit; }
+.galeria__acciones input[type="email"] { padding: .65rem .8rem; border: 1px solid #8e648f; border-radius: .5rem; background: var(--noche); }
+.galeria__acciones input[type="file"]::file-selector-button { margin-right: .75rem; padding: .5rem .75rem; border: 1px solid #8e648f; border-radius: .5rem; background: var(--noche); color: var(--texto); font: inherit; cursor: pointer; }
+.galeria__boton { padding: .65rem 1rem; border: 1px solid var(--rosa); border-radius: .75rem; background: var(--rosa); color: var(--noche); font: inherit; font-weight: 600; cursor: pointer; }
+.galeria__boton:disabled { cursor: wait; opacity: .7; }
+.galeria__boton--secundario { background: transparent; color: var(--texto); }
+.galeria__barra { justify-content: space-between; margin-bottom: 1rem; }
+.galeria__barra p { margin: 0; color: var(--suave); overflow-wrap: anywhere; }
+.galeria__fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.galeria__fotos li { overflow: hidden; aspect-ratio: 1; border-radius: 1rem; background: var(--noche-2); }
+.galeria__fotos img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.galeria__mensaje { margin: 1rem 0 0; color: var(--suave); }
+.galeria__mensaje--error { color: #ffb4bd; }
+
 .pie { text-align: center; color: var(--suave); padding: 4rem 0 3rem; }
 
 .scroll-reveal { opacity: 1; transform: translateY(0); }
