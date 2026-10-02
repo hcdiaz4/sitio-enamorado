@@ -2,7 +2,7 @@ import Contador from "@/components/Contador";
 import Momentos from "@/components/Momentos";
 import Cartas from "@/components/Cartas";
 import ScrollReveal from "@/components/ScrollReveal";
-import GaleriaFotos from "@/components/GaleriaFotos";
+import GaleriaRepositorio from "@/components/GaleriaRepositorio";
 import { cartas, momentos, pareja } from "@/data/contenido";
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <GaleriaFotos />
+      <GaleriaRepositorio />
 
       <ScrollReveal>
         <footer className="pie">Hecho con mucho amor para mi princesa consentida 🐚❤️</footer>
