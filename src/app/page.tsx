@@ -32,7 +32,7 @@ export default function Home() {
       </section>
 
       <ScrollReveal>
-        <footer className="pie">Hecho con cariño, para ti.</footer>
+        <footer className="pie">Hecho con mucho amor para mi princesa consentida 🐚❤️</footer>
       </ScrollReveal>
     </main>
   );
