@@ -69,6 +69,21 @@ h1, h2, h3 { font-family: var(--f-display), Georgia, serif; font-weight: 400; li
 .carta__pista { color: var(--suave); font-size: .9rem; }
 .carta__texto { font-size: 1.02rem; }
 
+.notas-compartidas__intro { margin: -1.5rem 0 1.5rem; color: var(--suave); }
+.notas-compartidas__formulario { display: grid; gap: .65rem; padding: 1.25rem; border: 1px solid #6b3a7a; border-radius: .5rem 1.5rem .5rem 1.5rem; background: var(--noche-2); }
+.notas-compartidas__formulario input, .notas-compartidas__formulario textarea { width: 100%; padding: .75rem; border: 1px solid #8e648f; border-radius: .5rem; background: var(--noche); color: var(--texto); font: inherit; }
+.notas-compartidas__formulario textarea { resize: vertical; }
+.notas-compartidas__acciones { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--suave); font-size: .9rem; }
+.notas-compartidas__boton { padding: .65rem 1rem; border: 1px solid var(--rosa); border-radius: .75rem; background: var(--rosa); color: var(--noche); font: inherit; font-weight: 600; cursor: pointer; }
+.notas-compartidas__boton:disabled { cursor: wait; opacity: .7; }
+.notas-compartidas__lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.notas-compartidas__nota { min-width: 0; padding: 1.25rem; border: 1px solid #6b3a7a; border-radius: .5rem 1.5rem .5rem 1.5rem; background: var(--noche-2); }
+.notas-compartidas__nota p { margin: 0 0 1rem; overflow-wrap: anywhere; white-space: pre-wrap; }
+.notas-compartidas__nota div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; color: var(--suave); font-size: .85rem; }
+.notas-compartidas__nota time { color: var(--miel); }
+.notas-compartidas__mensaje { margin: 1rem 0 0; color: var(--suave); }
+.notas-compartidas__mensaje--error { color: #ffb4bd; }
+
 .pie { text-align: center; color: var(--suave); padding: 4rem 0 3rem; }
 
 .scroll-reveal { opacity: 1; transform: translateY(0); }
@@ -80,7 +95,7 @@ h1, h2, h3 { font-family: var(--f-display), Georgia, serif; font-weight: 400; li
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .carta { transition: none; }
+  .carta, .notas-compartidas__boton { transition: none; }
   .scroll-reveal,
   .scroll-reveal__contenido { opacity: 1; transform: none; transition: none; will-change: auto; }
 }

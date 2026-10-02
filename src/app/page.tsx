@@ -1,6 +1,7 @@
 import Contador from "@/components/Contador";
 import Momentos from "@/components/Momentos";
 import Cartas from "@/components/Cartas";
+import NotitasCompartidas from "@/components/NotitasCompartidas";
 import ScrollReveal from "@/components/ScrollReveal";
 import { cartas, momentos, pareja } from "@/data/contenido";
 
@@ -30,6 +31,8 @@ export default function Home() {
           <Cartas cartas={cartas} />
         </ScrollReveal>
       </section>
+
+      <NotitasCompartidas />
 
       <ScrollReveal>
         <footer className="pie">Hecho con mucho amor para mi princesa consentida 🐚❤️</footer>
