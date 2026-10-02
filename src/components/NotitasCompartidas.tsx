@@ -123,7 +123,7 @@ export default function NotitasCompartidas() {
 
   return (
     <section className="seccion notas-compartidas" aria-labelledby="t-notas-compartidas">
-      <h2 id="t-notas-compartidas">Escribeme cuando quieras mi amor ❤️</h2>
+      <h2 id="t-notas-compartidas">Escríbeme cuando quieras mi amor ❤️</h2>
       <p className="notas-compartidas__intro">
         Para cuando no encuentres cómo escribirme mi princesa, acá está este espacio de notas públicas para que me dejes una notita 🥺. Recuerda que cualquiera puede leerla, así que no escribas nada personal.
       </p>
