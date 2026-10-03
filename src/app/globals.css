@@ -21,6 +21,18 @@ main { position: relative; z-index: 1; max-width: 56rem; margin: 0 auto; padding
 h1, h2, h3 { font-family: var(--f-display), Georgia, serif; font-weight: 400; line-height: 1.1; margin: 0; }
 :focus-visible { outline: 3px solid var(--miel); outline-offset: 3px; }
 
+.acceso__fondo { position: fixed; z-index: 10; inset: 0; display: grid; min-height: 100vh; min-height: 100svh; place-items: center; overflow-y: auto; padding: 1.25rem; background: rgb(24 7 30 / 94%); backdrop-filter: blur(10px); }
+.acceso__modal { width: min(100%, 34rem); padding: clamp(1.5rem, 6vw, 3rem); border: 1px solid #a94e78; border-radius: 1rem 2rem 1rem 2rem; background: linear-gradient(145deg, var(--noche-2), #28102f); box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 45%); text-align: center; }
+.acceso__corazon { display: block; margin-bottom: .75rem; font-size: 2rem; }
+.acceso__modal h1 { font-size: clamp(2rem, 7vw, 3rem); }
+.acceso__modal > p { margin: 1rem 0 1.5rem; color: var(--suave); }
+.acceso__formulario { display: grid; gap: .75rem; text-align: left; }
+.acceso__formulario label { color: var(--suave); }
+.acceso__formulario input { width: 100%; padding: .85rem 1rem; border: 1px solid #8e648f; border-radius: .6rem; background: var(--noche); color: var(--texto); font: inherit; font-size: 1.25rem; letter-spacing: .3em; text-align: center; }
+.acceso__boton { padding: .8rem 1rem; border: 1px solid var(--rosa); border-radius: .75rem; background: var(--rosa); color: var(--noche); font: inherit; font-weight: 700; cursor: pointer; }
+.acceso__boton:hover { filter: brightness(1.08); }
+.acceso__error { margin: 0; color: #ffb4bd; text-align: center; }
+
 .hero { padding: 18vh 0 5rem; }
 .hero h1 { font-size: clamp(2.6rem, 9vw, 6rem); }
 .hero__frase { max-width: 32rem; color: var(--suave); font-size: 1.15rem; margin: 1.25rem 0 3rem; }
